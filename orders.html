@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;400;500&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="login.html" class="logo">
+                <img class="img-logo" src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="">
+                <div id="brand">
+                    Kafene
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li class="orders-link active-link">
+                    <a href="#">Orders</a>
+                </li>
+                <li class="products-link">
+                    <a href="products.html">Products</a>
+                </li>
+                <li class="users-link">
+                    <a href="users.html">Users</a>
+                </li>
+            </ul>
+            <a id="logout-button" href="">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 id="orders-title">Orders</h1>
+            <div class="wrapper">
+                <div class="col-left">
+                    <h3>Filters</h3>
+                    <div id="orders-filter">
+                        <div class="filter-option">
+                            <span>Count:</span>
+                            <span id="orders-count"></span>
+                        </div>
+                        <div class="orders-checkbox">
+                            <input type="checkbox" checked id="new" name="new" value="new">
+                            <label for="new">New</label><br>
+                        </div>
+                        <div class="orders-checkbox">
+                            <input type="checkbox" checked id="packed" name="packed" value="packed">
+                            <label for="packed">Packed</label><br>
+                        </div>
+                        <div class="orders-checkbox">
+                            <input type="checkbox" checked id="intransit" name="intransit" value="intransit">
+                            <label for="intransit">In Transit</label><br>
+                        </div>
+                        <div class="orders-checkbox">
+                            <input type="checkbox" checked id="delivered" name="delivered" value="delivered">
+                            <label for="delivered">Delivered</label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./scripts/orders.js"></script>
+</body>
+
+</html>

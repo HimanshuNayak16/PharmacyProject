@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding-top: 96px;
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px 8px;
+}
+
+#logo-svg {
+  width: 100px;
+  height: 76px;
+}
+
+.img-logo {
+  width: 24px;
+  height: 28px;
+}
+
+#brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  justify-content: flex-start;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 2px 8px 0px rgba(43, 37, 37, 0.425);
+  padding: 0px 4%;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 24px 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin: 0 10px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  padding: 0px 16px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.active-link {
+  color: #20b883;
+  border-bottom: 3px solid #20b883;
+}
+
+.active-link a {
+  color: #20b883;
+}
+
+#login-form {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 6px #ccc;
+}
+
+.input-login {
+  width: 100%;
+  padding-top: 16px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+#login-btn {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+#logout-button {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 24px 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin: 0 10px;
+  position: absolute;
+  right: 16px;
+}
+
+#products-title,
+#orders-title {
+  font-size: 32px;
+  padding-left: 10%;
+}
+
+#products-filter,
+#orders-filter {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.filter-option {
+  margin: 24px 0px;
+}
+
+.products-checkbox,
+.orders-checkbox {
+  margin: 6px 0px;
+  cursor: pointer;
+}
+
+.products-checkbox input,
+.orders-checkbox input {
+  margin-right: 12px;
+  border-radius: 24px;
+}
+
+.wrapper {
+  display: flex;
+  padding: 24px 0;
+}
+
+#users-wrapper {
+  padding: 24px 10%;
+}
+
+.userlist-filter {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  margin: 45px 0px;
+}
+
+.userlist-searchbox {
+  width: calc(100% - 100px);
+  padding: 12px 24px;
+  font-size: 15px;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin: 0 36px 0 0;
+  outline: none;
+}
+
+.userlist-reset-btn {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.col-left {
+  padding-left: 10%;
+}
+.col-right {
+  padding-right: 10%;
+}
+
+.order-table th {
+  text-align: left;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.secondary-text {
+  color: #8c8c8c;
+}
+
+.primary-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.order-table td {
+  background-color: #fff;
+  border-bottom: 4px solid #f6f7fb;
+  text-align: left;
+  padding: 12px 24px;
+  font-size: 14px;
+}

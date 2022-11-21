@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;400;500&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="login.html" class="logo">
+                <img class="img-logo" src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="">
+                <div id="brand">
+                    Kafene
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li class="orders-link">
+                    <a href="orders.html">Orders</a>
+                </li>
+                <li class="products-link">
+                    <a href="products.html">Products</a>
+                </li>
+                <li class="users-link active-link">
+                    <a href="#">Users</a>
+                </li>
+            </ul>
+            <a id="logout-button" href="">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+            <div id="users-wrapper">
+                <h1 id="users-title">Users</h1>
+                <form class="userlist-filter" id="users-search-form">
+                    <input type="search" id="user-search" class="userlist-searchbox" placeholder="Search by Name">
+                    <input type="reset" id="reset-btn" class="userlist-reset-btn" value="Reset">
+                </form>
+                <div class="col-right">
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>User Avatar</th>
+                                <th>Full Name</th>
+                                <th>DOB</th>
+                                <th>Gender</th>
+                                <th>Current Location</th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./scripts/users.js"></script>
+</body>
+
+</html>

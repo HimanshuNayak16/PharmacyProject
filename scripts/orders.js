@@ -20,7 +20,6 @@ window.onload = () => {
 };
 
 const createOrderTableBodyRow = (row, tbody) => {
-  console.log(row);
   const { id, customerName, orderDate, amount, orderStatus } = row;
   const tableRow = `<tr>
         <td class="secondary-text">${id}</td>

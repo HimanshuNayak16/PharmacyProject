@@ -5,7 +5,6 @@ window.onload = () => {
   let loginForm = document.getElementById("login-form");
   loginForm.onsubmit = function (e) {
     e.preventDefault();
-    console.log(this);
     let loginCredential = {
       username: this.username.value,
       password: this.password.value,

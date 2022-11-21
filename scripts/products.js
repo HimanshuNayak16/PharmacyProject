@@ -65,7 +65,7 @@ lowStockCheckBox.addEventListener("change", function (e) {
     let td = tr[i].getElementsByTagName("td")[5];
     if (td) {
       let textValue = td.textContent || td.innerHTML;
-      if (textValue < 100) {
+      if (parseInt(textValue) < 100) {
         if (this.checked === true) {
           tr[i].style.display = "";
           document.getElementById("products-count").innerText =
